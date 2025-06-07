@@ -1,12 +1,537 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Herbatki</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbatki - Kolekcja Herbat</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f7f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c5530;
+            border-bottom: 3px solid #2c5530;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4a7c59;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4a7c59;
+            padding-left: 15px;
+        }
+
+        .tea-category {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tea-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #fefefe;
+        }
+
+        .tea-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c5530;
+            margin-bottom: 8px;
+        }
+
+        .tea-description {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .brewing-section {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .brewing-title {
+            font-weight: bold;
+            color: #4a7c59;
+            margin-bottom: 5px;
+        }
+
+        .brewing-method {
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .brewing-params {
+            margin-left: 30px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .steeping-times {
+            margin-left: 45px;
+            font-size: 0.9em;
+        }
+
+        .glossary {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .glossary-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 3px solid #4a7c59;
+            background-color: #f9f9f9;
+        }
+
+        .term {
+            font-weight: bold;
+            color: #2c5530;
+        }
+
+        .no-brewing {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
 </head>
+
 <body>
+    <h1>🍃 Herbatki - Kolekcja Herbat</h1>
 
-<h1>Herbatki</h1>
-<p>123</p>
+    <h2>Herbaty Pu-erh</h2>
+    <div class="tea-category">
+        <div class="tea-item">
+            <div class="tea-name">Tuanshan Sheng Pu-erh 2020</div>
+            <div class="tea-description">Opis: Do uzupełnienia</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">5g / 100ml, 96°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 10s</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>Do 10 parzeń</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="tea-item">
+            <div class="tea-name">Xi Zi Hao Pasha Shu Pu-erh 2008</div>
+            <div class="tea-description">Opis: Dojrzała herbata pu-erh słynnej butikowej marki z Tajwanu. Do produkcji
+                wykorzystano materiał z starszych drzew herbacianych z Pasha Laozhai. Wysokiej klasy shu pu-erh o
+                pełnym, gładkim smaku.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">6-7g / 100ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 10-15s</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>Do 8-10 parzeń</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Yongde Shu Pu-erh 2022</div>
+            <div class="tea-description">Opis: Do uzupełnienia</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">6-7g / 100ml, 96°C</div>
+                    <div class="steeping-times">
+                        <div>1-4 parzenie - &lt;10s</div>
+                        <div>4+ parzenie - stopniowo dłużej</div>
+                        <div>Do 10 parzeń</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Nan Nuo Mountain Shu Pu-erh</div>
+            <div class="tea-description">Opis: Dojrzała herbata pu-erh pochodząca z obszaru góry Nan Nuo. Klasyczna i
+                intensywna, o miękkim, łagodnym, ziemistym charakterze.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">6-7g / 100ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 10-15s</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>Do 8-10 parzeń</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Da Xue Shan Yesheng Maocha 2025</div>
+            <div class="tea-description">Opis: Świeży surowy pu-erh (sheng) w formie maocha, czyli przed prasowaniem w
+                ciastka. Pochodzi z regionu góry Da Xue Shan i wytwarzany jest z drzew dzikiej odmiany (yesheng). Ma
+                świeży, intensywny smak charakterystyczny dla młodych sheng pu-erh.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">5-6g / 100ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 10-15s</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>Do 8-12 parzeń</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Herbaty Oolong</h2>
+    <div class="tea-category">
+        <div class="tea-item">
+            <div class="tea-name">Zhangping Shui Xian 2022</div>
+            <div class="tea-description">Opis: Zielona; aromat intensywnie jaśminowy - ta herbatka w bloczkach</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">4-5g / 100ml, 90-95°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 30s</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>Do 6-8 parzeń</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 90°C</div>
+                    <div class="steeping-times">
+                        <div>1-2 minuty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Cui Yu Oolong 2024</div>
+            <div class="tea-description">Opis: Do uzupełnienia</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">4-5g / 100ml, 90-95°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 30-50s</div>
+                        <div>2+ parzenie - dodawać 10-15s każde kolejne</div>
+                        <div>Do 6-8 parzeń</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 90°C</div>
+                    <div class="steeping-times">
+                        <div>1-2 minuty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Bagua Hong Shui 2024</div>
+            <div class="tea-description">Opis: Tradycyjny tajwański oolong w stylu "hong shui" (czerwona woda). Długo
+                prażona herbata o miodowym charakterze i głębokim, bogatym smaku.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">4-5g / 100ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 50s</div>
+                        <div>2+ parzenie - dodawać 10-15s każde kolejne</div>
+                        <div>Po 3. parzeniu - do 2 minut każde kolejne</div>
+                        <div>Do 8-10 parzeń</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 95°C</div>
+                    <div class="steeping-times">
+                        <div>2-3 minuty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Nepal Kuwapani Oolong 2024</div>
+            <div class="tea-description">Opis: Do uzupełnienia</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">4-5g / 100ml, 90-95°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 30-50s</div>
+                        <div>2+ parzenie - dodawać 10-15s każde kolejne</div>
+                        <div>Do 6-8 parzeń</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 90°C</div>
+                    <div class="steeping-times">
+                        <div>1-2 minuty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Herbaty Czarne</h2>
+    <div class="tea-category">
+        <div class="tea-item">
+            <div class="tea-name">Jin Mu Dan Hongcha 2024</div>
+            <div class="tea-description">Opis: Chińska czerwona herbata o delikatnym, słodkim smaku. Nazwa oznacza
+                "Złotą Peonię" - charakteryzuje się kwiatowymi nutami i harmonijnym profilem smakowym.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">5g / 100ml, 90-95°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 3-5s</div>
+                        <div>2+ parzenie - stopniowo dłużej (10s, 15s, 20s)</div>
+                        <div>Do 8-10 parzeń</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 90-95°C</div>
+                    <div class="steeping-times">
+                        <div>3-5 minut</div>
+                        <div>Można parzyć 2-3 razy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Yunnan Laoshu Hongcha 2025</div>
+            <div class="tea-description">Opis: Yunnan Dian Hong ze starych drzew herbacianych. Pełnoustna czerwona
+                herbata o miodowo-słodowym smaku z nutami czekolady i subtelnych przypraw. Charakteryzuje się
+                miedziano-czerwonym kolorem naparu.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">5-6g / 100ml, 85-95°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 3-5s (wyżej tipów = niższa temperatura)</div>
+                        <div>2+ parzenie - stopniowo dłużej (10s, 15s, 25s)</div>
+                        <div>Do 8-10 parzeń</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 90-95°C</div>
+                    <div class="steeping-times">
+                        <div>3-5 minut</div>
+                        <div>Można parzyć 2-3 razy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Nepal Sakhira SF 2024</div>
+            <div class="tea-description">Opis: Klasyczna czarna herbata nepalska stylem przypominająca herbaty z
+                sąsiedniego Darjeelingu. Zbiór letni (second flush) o bogatym, pełnym smaku z nutami muszkatu i
+                charakterystyczną słodyczą.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">2-3g / 200ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>3-5 minut</div>
+                        <div>Można parzyć 2-3 razy</div>
+                    </div>
+                </div>
+                <div class="brewing-method">
+                    <strong>Gongfu Cha</strong>
+                    <div class="brewing-params">5g / 100ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 30s</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>Do 6-8 parzeń</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Dzika Gruzińska</div>
+            <div class="tea-description">Opis: Aromatyczna herbata czarna z Gruzji. Idealna do długiego, bardziej
+                niedbałego parzenia. Charakteryzuje się orzeźwiającym kwaskowym posmakiem i mocnym, pełnym smakiem
+                typowym dla herbat kaukaskich.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Metoda zachodnia</strong>
+                    <div class="brewing-params">3-4g / 200ml, 95-100°C</div>
+                    <div class="steeping-times">
+                        <div>4-6 minut</div>
+                        <div>Można parzyć wielokrotnie</div>
+                        <div>Toleruje długie parzenie</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Herbaty Białe</h2>
+    <div class="tea-category">
+        <div class="tea-item">
+            <div class="tea-name">White Nepam Jun Chiyabari</div>
+            <div class="tea-description">Opis: Delikatna biała herbata z wyselekcjonowanych młodych listków z
+                wysokogórskiej plantacji nepalskiej. Bardzo aromatyczna, o delikatnym, roślinnym smaku z subtelymi
+                nutami.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Metoda klasyczna</strong>
+                    <div class="brewing-params">2-3g / 200ml, 75-80°C</div>
+                    <div class="steeping-times">
+                        <div>3-4 minuty</div>
+                        <div>Można parzyć wielokrotnie</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Herbaty Zielone</h2>
+    <div class="tea-category">
+        <div class="tea-item">
+            <div class="tea-name">Enshi Yulu 2025</div>
+            <div class="tea-description">Opis: chińska herbata zielona przetwarzana tak jak większość herbat japońskich,
+                czyli przez podgrzanie świeżych liści parą wodną. Unikalna i niszowa w swoim stylu, ale w smaku
+                klasyczna i pyszna.</div>
+            <div class="brewing-section">
+                <div class="no-brewing">Instrukcje parzenia: Do uzupełnienia</div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Che Tai Nguyen</div>
+            <div class="tea-description">Opis: Herbata zielona z Wietnamu, produkowana w stylu herbat chińskich.
+                Wietnamski klimat daje jednak odmienny charakter smakowy. Napar ma jasny zielony odcień, a jego
+                struktura jest przyjemna i oleista. Smak jest umiarkowanie mocny, a zapach lekko kwiatowy.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Metoda klasyczna</strong>
+                    <div class="brewing-params">5g / 250ml, 80°C</div>
+                    <div class="steeping-times">
+                        <div>3-5 minut</div>
+                        <div>Można parzyć wielokrotnie</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tea-item">
+            <div class="tea-name">Kukicha</div>
+            <div class="tea-description">Opis: Japońska herbata zielona wykonana z łodyżek, gałązek i patyczków krzewu
+                herbacinego. Ma unikalny smak i aromat, łagodny i orzechowy, o niskiej zawartości kofeiny.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Metoda japońska</strong>
+                    <div class="brewing-params">4-5g / 200ml, 70-80°C</div>
+                    <div class="steeping-times">
+                        <div>1. parzenie - 1-2 minuty</div>
+                        <div>2+ parzenie - stopniowo dłużej</div>
+                        <div>3-4 parzenia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Herbaty Żółte</h2>
+    <div class="tea-category">
+        <div class="tea-item">
+            <div class="tea-name">Huang Xiao</div>
+            <div class="tea-description">Opis: Rzadko spotykana herbata żółta pamiętająca czasy dynastii Ming i Qing.
+                Odkryta na nowo w latach 70-tych. Delikatna w smaku, o charakterystycznym słodkawym aromacie i
+                jasno-żółtym kolorze naparu.</div>
+            <div class="brewing-section">
+                <div class="brewing-title">Parzenie:</div>
+                <div class="brewing-method">
+                    <strong>Metoda klasyczna</strong>
+                    <div class="brewing-params">3-4g / 200ml, 80-85°C</div>
+                    <div class="steeping-times">
+                        <div>2-3 minuty</div>
+                        <div>Można parzyć 3-4 razy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>📚 Słowniczek</h2>
+    <div class="glossary">
+        <div class="glossary-item">
+            <span class="term">Shu Pu-erh</span> - Pu-erh dojrzały (fermentowany), ciemny pu-erh, który przeszedł proces
+            mokrej fermentacji (wo dui). Ma ziemisty, głęboki smak.
+        </div>
+
+        <div class="glossary-item">
+            <span class="term">Sheng Pu-erh</span> - Pu-erh surowy (niefermentowany), zielony pu-erh, który dojrzewa
+            naturalnie z czasem. Ma świeży, czasem gorzkawy smak, który łagodnieje z wiekiem.
+        </div>
+
+        <div class="glossary-item">
+            <span class="term">Gongfu Cha</span> - Tradycyjna chińska metoda parzenia herbaty z wielokrotnymi krótkimi
+            zaparzeniami przy użyciu małego imbryczkta lub gajwanu.
+        </div>
+
+        <div class="glossary-item">
+            <span class="term">Hongcha</span> - Chiński termin na herbaty czerwone (znane na Zachodzie jako herbaty
+            czarne).
+        </div>
+
+        <div class="glossary-item">
+            <span class="term">Hong Shui</span> - Dosłownie "czerwona woda", tradycyjny tajwański styl oolong o długim
+            prażeniu, charakteryzujący się miodowym smakiem i głęboką barwą naparu.
+        </div>
+    </div>
 </body>
-</html> 
+
+</html>
